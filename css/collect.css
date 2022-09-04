@@ -4,9 +4,6 @@ body {
 	overflow-x: hidden;
 }
 
-nav {
-	/* border: 1px solid red; */
-}
 main {
 	position: relative;
 	overflow-y: hidden;
@@ -170,26 +167,6 @@ footer:hover {
 	vertical-align: bottom;
 }
 
-#collection {
-	flex-direction: column;
-	align-items: flex-start;
-	font-size: 50px;
-	margin: 0;
-	justify-content: center;
-}
-
-#collection li {
-	padding: 15px;
-}
-
-#collection li:first-child {
-	padding-top: 0px;
-}
-
-#collection li:last-child {
-	padding-bottom: 0;
-}
-
 /* "COLLECTIONS" HOME PAGE */
 
 #home-main {
@@ -218,6 +195,60 @@ footer:hover {
 	text-align: center;
 	opacity: 0;
 	transition: all 1s ease;
+}
+
+#collect-scroll {
+	display: flex;
+	flex-direction: column;
+	max-height: 95%;
+}
+
+#collection {
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 50px;
+	margin: 0;
+	justify-content: flex-start;
+	/* border: 1px solid red; */
+	overflow: auto;
+	transition: all 0.25s ease;
+}
+
+#collection li {
+	padding: 15px;
+}
+
+#collection li:first-child {
+	padding-top: 0px;
+}
+
+#collection li:last-child {
+	padding-bottom: 0;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+	/* border: 1px solid red; */
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	transition: all 0.25s ease;
+}
+
+/* .fa-angle-up {
+	opacity: 0;
+} */
+
+.fa-angle-down:hover {
+	transform: translateY(3px);
+	color: #f241c3;
+	cursor: pointer;
+}
+
+.fa-angle-up:hover {
+	transform: translateY(-3px);
+	color: #f241c3;
+	cursor: pointer;
 }
 
 @media screen and (max-height: 760px) {
@@ -263,6 +294,11 @@ footer:hover {
 	}
 
 	#home_preview {
+		height: 400px;
+		width: 400px;
+	}
+
+	#home_preview img {
 		height: 400px;
 		width: 400px;
 	}

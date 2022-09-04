@@ -14,6 +14,8 @@
 	const lightP = document.getElementById('lightp');
 	const famP = document.getElementById('famp');
 
+	let downCounter = 0;
+
 	mendoLink.addEventListener('mouseover', function () {
 		mendoP.style.opacity = '100%';
 		greenP.style.opacity = '0';
@@ -68,5 +70,38 @@
 
 	famLink.addEventListener('mouseout', function () {
 		famP.style.opacity = '0';
+	});
+
+	document.querySelector('.fa-angle-down').addEventListener('click', function () {
+		if (downCounter == 0) {
+			// document.querySelector('.fa-angle-up').style.opacity = '100%';
+			downCounter += 1;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('exclink').scrollIntoView({ behavior: 'smooth' });
+		} else if (downCounter == 1) {
+			downCounter += 1;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('warelink').scrollIntoView({ behavior: 'smooth' });
+		} else {
+			downCounter = 0;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('positanolink').scrollIntoView({ behavior: 'smooth' });
+		}
+	});
+
+	document.querySelector('.fa-angle-up').addEventListener('click', function () {
+		if (downCounter == 0) {
+			downCounter = 2;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('famlink').scrollIntoView({ behavior: 'smooth' });
+		} else if (downCounter == 1) {
+			downCounter = 0;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('positanolink').scrollIntoView({ behavior: 'smooth' });
+		} else {
+			downCounter = 1;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('exclink').scrollIntoView({ behavior: 'smooth' });
+		}
 	});
 })();
