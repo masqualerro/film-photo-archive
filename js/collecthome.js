@@ -23,7 +23,7 @@
 	const florenceP = document.getElementById('florencep');
 	const vaticanP = document.getElementById('vaticanp');
 	const romaP = document.getElementById('romap');
-	const excP = document.getElementById('excP');
+	const excP = document.getElementById('excp');
 	const mendoP = document.getElementById('mendop');
 	const greenP = document.getElementById('greenp');
 	const wareP = document.getElementById('warep');
