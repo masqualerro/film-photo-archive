@@ -83,3 +83,27 @@ a:hover {
 	vertical-align: bottom;
 	transition: all 0.5s ease;
 }
+
+#overlay {
+	position: fixed;
+	display: none;
+	width: 90%;
+	height: 90%;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 2;
+	cursor: pointer;
+	background-size: contain;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+#overlay {
+	cursor: zoom-out;
+}
+
+img:hover {
+	cursor: zoom-in;
+}
