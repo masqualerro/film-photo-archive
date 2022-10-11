@@ -10,6 +10,10 @@
 	const vaticanLink = document.getElementById('vaticanlink');
 	const romaLink = document.getElementById('romalink');
 	const excLink = document.getElementById('exclink');
+	const kewLink = document.getElementById('kewlink');
+	const intLink = document.getElementById('intlink');
+	const thamesLink = document.getElementById('thameslink');
+	const londonLink = document.getElementById('londonlink');
 	const mendoLink = document.getElementById('mendolink');
 	const greenLink = document.getElementById('greenlink');
 	const wareLink = document.getElementById('warelink');
@@ -24,6 +28,10 @@
 	const vaticanP = document.getElementById('vaticanp');
 	const romaP = document.getElementById('romap');
 	const excP = document.getElementById('excp');
+	const kewP = document.getElementById('kewp');
+	const intP = document.getElementById('intp');
+	const thamesP = document.getElementById('thamesp');
+	const londonP = document.getElementById('londonp');
 	const mendoP = document.getElementById('mendop');
 	const greenP = document.getElementById('greenp');
 	const wareP = document.getElementById('warep');
@@ -39,6 +47,10 @@
 		vaticanLink,
 		romaLink,
 		excLink,
+		kewLink,
+		intLink,
+		thamesLink,
+		londonLink,
 		mendoLink,
 		greenLink,
 		wareLink,
@@ -55,6 +67,10 @@
 		vaticanP,
 		romaP,
 		excP,
+		kewP,
+		intP,
+		thamesP,
+		londonP,
 		mendoP,
 		greenP,
 		wareP,
@@ -65,14 +81,14 @@
 	let downCounter = 0;
 
 	for (let i = 0; i < linkList.length; i++) {
-		console.log(linkList[i]);
+		// console.log(linkList[i]);
 		linkList[i].addEventListener('mouseover', function () {
 			pList[i].style.opacity = '100%';
 		});
 	}
 
 	for (let i = 0; i < linkList.length; i++) {
-		console.log(linkList[i]);
+		// console.log(linkList[i]);
 		linkList[i].addEventListener('mouseout', function () {
 			pList[i].style.opacity = '0';
 		});
@@ -87,7 +103,11 @@
 		} else if (downCounter == 1) {
 			downCounter += 1;
 			console.log(`counter = ${downCounter}`);
-			document.getElementById('warelink').scrollIntoView({ behavior: 'smooth' });
+			document.getElementById('thameslink').scrollIntoView({ behavior: 'smooth' });
+		} else if (downCounter == 2) {
+			downCounter += 1;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('famlink').scrollIntoView({ behavior: 'smooth' });
 		} else {
 			downCounter = 0;
 			console.log(`counter = ${downCounter}`);
@@ -97,17 +117,21 @@
 
 	document.querySelector('.fa-angle-up').addEventListener('click', function () {
 		if (downCounter == 0) {
-			downCounter = 2;
+			downCounter = 3;
 			console.log(`counter = ${downCounter}`);
 			document.getElementById('famlink').scrollIntoView({ behavior: 'smooth' });
 		} else if (downCounter == 1) {
 			downCounter = 0;
 			console.log(`counter = ${downCounter}`);
 			document.getElementById('positanolink').scrollIntoView({ behavior: 'smooth' });
-		} else {
+		} else if (downCounter == 2) {
 			downCounter = 1;
 			console.log(`counter = ${downCounter}`);
 			document.getElementById('exclink').scrollIntoView({ behavior: 'smooth' });
+		} else {
+			downCounter = 2;
+			console.log(`counter = ${downCounter}`);
+			document.getElementById('pompeiilink').scrollIntoView({ behavior: 'smooth' });
 		}
 	});
 })();

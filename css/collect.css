@@ -304,6 +304,12 @@ footer:hover {
 	}
 }
 
+@media screen and (max-width: 715px) {
+	#collection {
+		font-size: 45px;
+	}
+}
+
 @media screen and (max-width: 500px) {
 	header {
 		display: initial;
