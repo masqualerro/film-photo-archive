@@ -2,6 +2,7 @@
 body {
 	background-color: #d8d3cd;
 }
+
 h1 {
 	text-align: right;
 	font-family: 'general_sanslight', sans-serif;
@@ -10,12 +11,14 @@ h1 {
 	padding-right: 35px;
 	margin: 0;
 }
+
 header {
 	display: flex;
 	justify-content: space-between;
 	flex-direction: row-reverse;
 	align-items: center;
 }
+
 ul {
 	list-style-type: none;
 	padding: 0;
@@ -106,4 +109,61 @@ a:hover {
 
 .mchild img:hover {
 	cursor: zoom-in;
+}
+
+@media screen and (max-width: 1375px) {
+	#instruction {
+		padding-left: 10px;
+	}
+	h1 {
+		padding-right: 10px;
+	}
+}
+
+@media screen and (max-width: 750px) {
+	h1 {
+		width: auto;
+		margin: 0;
+		font-size: 60px;
+		padding: 0;
+	}
+
+	h1,
+	h2 {
+		text-align: center;
+	}
+
+	ul {
+		display: flex;
+		justify-content: space-evenly;
+	}
+
+	.pointer {
+		display: none;
+		border: 1px solid red;
+	}
+
+	body {
+		display: initial;
+		background-color: #d8d3cd;
+	}
+
+	header {
+		display: initial;
+		margin: 0;
+		padding: 0;
+	}
+
+	#instruction {
+		display: none;
+	}
+
+	nav {
+		margin: 0;
+		padding: 0;
+	}
+	ul {
+		margin: 16px;
+		font-size: 16px;
+	}
 }

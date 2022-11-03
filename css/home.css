@@ -127,8 +127,7 @@ footer a:hover {
 		width: auto;
 		margin: 0;
 	}
-	h2 {
-	}
+
 	h1,
 	h2 {
 		text-align: center;
@@ -177,6 +176,34 @@ footer a:hover {
 }
 
 @media screen and (max-width: 500px) {
+	h1 {
+		font-size: 60px;
+	}
+}
+
+@media screen and (max-height: 760px) {
+	/* img {
+		height: 520px;
+	} */
+
+	#home-main {
+		height: 500px;
+	}
+}
+
+@media screen and (max-width: 1070px) {
+	h1 {
+		font-size: 85px;
+	}
+}
+
+@media screen and (max-width: 940px) {
+	h1 {
+		font-size: 70px;
+	}
+}
+
+@media screen and (max-width: 850px) {
 	h1 {
 		font-size: 60px;
 	}

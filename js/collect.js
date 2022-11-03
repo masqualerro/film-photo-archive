@@ -32,10 +32,22 @@
 		foot1.style.display = 'none';
 	});
 
-	scrollContainer.addEventListener('wheel', (evt) => {
-		evt.preventDefault();
-		scrollContainer.scrollLeft += evt.deltaY + evt.deltaX;
-	});
+	function scrollBar() {
+		scrollContainer.addEventListener('wheel', (evt) => {
+			evt.preventDefault();
+			scrollContainer.scrollLeft += evt.deltaY + evt.deltaX;
+		});
+	}
+
+	let timeout = setTimeout(scrollBar, 50);
+
+	if (window.innerWidth < 715) {
+		clearTimeout(timeout);
+	}
+
+	window.onresize = function checkWidth(width) {
+		clearTimeout;
+	};
 
 	document.addEventListener('keydown', function (e) {
 		if (e.key === 'Escape') {

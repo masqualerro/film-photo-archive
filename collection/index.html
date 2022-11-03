@@ -1,100 +1,101 @@
 <!DOCTYPE html>
 <html lang="en">
-	<head>
-		<meta charset="UTF-8" />
-		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>Collection</title>
 
-		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+<head>
+	<meta charset="UTF-8" />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<title>Collection</title>
 
-		<script src="https://kit.fontawesome.com/daafecce72.js" crossorigin="anonymous"></script>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
 
-		<link rel="stylesheet" href="../css/collect.css" />
-		<link rel="stylesheet" href="../css/fonts.css" />
-	</head>
-	<body id="homebody">
-		<header>
-			<h1>collections</h1>
-			<nav>
-				<ul>
-					<li>
-						<a href="../index.html">home</a>
-					</li>
-					<li>
-						<a href="../archive.html">archive</a>
-					</li>
-					<li>
-						<a href="../game/index.html">game</a>
-					</li>
-				</ul>
-			</nav>
-			<p id="instruction">
-				<span class="plabel">controls</span>
-				<br />
-				<i class="fas fa-arrow-right pointer"></i>
-				<br />
-				- -scroll to browse - -
-				<br />
-				<span id="grayscale">g for grayscale</span>
-				<br />
-				<span id="huerotate">h for hue rotate</span>
-				<br />
-				<span id="sepia">s for sepia</span>
-				<br />
-				<span id="invert">i for invert</span>
-				<i class="fas fa-ghost"></i>
-				<br />
-				n to return to 'normal'
-			</p>
-		</header>
-		<section id="home-main">
-			<div id="collect-scroll">
-				<i class="fa-solid fa-angle-up"></i>
-				<ul id="collection">
-					<li id="positanolink"><a href="shoots/positano.html">positano</a></li>
-					<li id="sorrentolink"><a href="shoots/sorrento.html">sorrento</a></li>
-					<li id="vaticanlink"><a href="shoots/vaticancity.html">vatican city</a></li>
-					<li id="florencelink"><a href="shoots/florence.html">florence</a></li>
-					<li id="romalink"><a href="shoots/roma.html">roma</a></li>
-					<li id="exclink"><a href="shoots/excursions.html">excursions</a></li>
-					<li id="ruinslink"><a href="shoots/ruins.html">ruins</a></li>
-					<li id="pompeiilink"><a href="shoots/pompeii.html">pompeii</a></li>
-					<li id="kewlink"><a href="shoots/kewgardens.html">kew gardens</a></li>
-					<li id="intlink"><a href="shoots/interiors.html">uk interiors</a></li>
-					<li id="thameslink"><a href="shoots/thames.html">thames</a></li>
-					<li id="londonlink"><a href="shoots/london.html">london</a></li>
-					<li id="mendolink"><a href="shoots/mendo.html">mendocino</a></li>
-					<li id="greenlink"><a href="shoots/greenhouse.html">greenhouse</a></li>
-					<li id="warelink"><a href="shoots/warehouse.html">warehouse</a></li>
-					<li id="lightlink"><a href="shoots/light.html">lightleak</a></li>
-					<li id="famlink"><a href="shoots/family.html">brothers</a></li>
-					<li></li>
-				</ul>
-				<i class="fas fa-angle-down"></i>
-			</div>
+	<script src="https://kit.fontawesome.com/daafecce72.js" crossorigin="anonymous"></script>
 
-			<div id="home_preview">
-				<img src="../images/home/roma_icon.png" alt="roma_preview" id="romap" />
-				<img src="../images/home/ruins_icon.png" alt="ruins_preview" id="ruinsp" />
-				<img src="../images/home/pompeii_icon.png" alt="pompeii_preview" id="pompeiip" />
-				<img src="../images/home/exc_icon.png" alt="exc_preview" id="excp" />
-				<img src="../images/home/sorrento_icon.png" alt="sorrento_preview" id="sorrentop" />
-				<img src="../images/home/positano_icon.png" alt="positano_preview" id="positanop" />
-				<img src="../images/home/florence_icon.png" alt="florence_preview" id="florencep" />
-				<img src="../images/home/vatican_icon.png" alt="vatican_preview" id="vaticanp" />
-				<img src="../images/home/kew_icon.png" alt="kewgardens_preview" id="kewp" />
-				<img src="../images/home/int_icon.png" alt="interiors_preview" id="intp" />
-				<img src="../images/home/thames_icon.png" alt="thames_preview" id="thamesp" />
-				<img src="../images/home/london_icon.png" alt="london_preview" id="londonp" />
-				<img src="../images/home/m_icon.png" alt="mendocino_preview" id="mendop" />
-				<img src="../images/home/g_icon.png" alt="greenhouse_preview" id="greenp" />
-				<img src="../images/home/w_icon.png" alt="warehouse_preview" id="warep" />
-				<img src="../images/home/l_icon.png" alt="lightleak_preview" id="lightp" />
-				<img src="../images/home/f_icon.png" alt="brothers_preview" id="famp" />
-			</div>
-		</section>
-		<script src="../js/collecthome.js"></script>
-		<script src="../js/filters.js"></script>
-	</body>
+	<link rel="stylesheet" href="../css/collect.css" />
+	<link rel="stylesheet" href="../css/fonts.css" />
+</head>
+
+<body id="homebody">
+	<header>
+		<h1>collections</h1>
+		<nav>
+			<ul>
+				<li>
+					<a href="../index.html">home</a>
+				</li>
+				<li>
+					<a href="../archive.html">archive</a>
+				</li>
+
+			</ul>
+		</nav>
+		<p id="instruction">
+			<span class="plabel">controls</span>
+			<br />
+			<i class="fas fa-arrow-right pointer"></i>
+			<br />
+			- -scroll to browse - -
+			<br />
+			<span id="grayscale">g for grayscale</span>
+			<br />
+			<span id="huerotate">h for hue rotate</span>
+			<br />
+			<span id="sepia">s for sepia</span>
+			<br />
+			<span id="invert">i for invert</span>
+			<i class="fas fa-ghost"></i>
+			<br />
+			n to return to 'normal'
+		</p>
+	</header>
+	<section id="home-main">
+		<div id="collect-scroll">
+			<i class="fa-solid fa-angle-up"></i>
+			<ul id="collection">
+				<li id="positanolink"><a href="shoots/positano.html">positano</a></li>
+				<li id="sorrentolink"><a href="shoots/sorrento.html">sorrento</a></li>
+				<li id="vaticanlink"><a href="shoots/vaticancity.html">vatican city</a></li>
+				<li id="florencelink"><a href="shoots/florence.html">florence</a></li>
+				<li id="romalink"><a href="shoots/roma.html">roma</a></li>
+				<li id="exclink"><a href="shoots/excursions.html">excursions</a></li>
+				<li id="ruinslink"><a href="shoots/ruins.html">ruins</a></li>
+				<li id="pompeiilink"><a href="shoots/pompeii.html">pompeii</a></li>
+				<li id="kewlink"><a href="shoots/kewgardens.html">kew gardens</a></li>
+				<li id="intlink"><a href="shoots/interiors.html">uk interiors</a></li>
+				<li id="thameslink"><a href="shoots/thames.html">thames</a></li>
+				<li id="londonlink"><a href="shoots/london.html">london</a></li>
+				<li id="mendolink"><a href="shoots/mendo.html">mendocino</a></li>
+				<li id="greenlink"><a href="shoots/greenhouse.html">greenhouse</a></li>
+				<li id="warelink"><a href="shoots/warehouse.html">warehouse</a></li>
+				<li id="lightlink"><a href="shoots/light.html">lightleak</a></li>
+				<li id="famlink"><a href="shoots/family.html">brothers</a></li>
+				<li></li>
+			</ul>
+			<i class="fas fa-angle-down"></i>
+		</div>
+
+		<div id="home_preview">
+			<img src="../images/home/roma_icon.png" alt="roma_preview" id="romap" />
+			<img src="../images/home/ruins_icon.png" alt="ruins_preview" id="ruinsp" />
+			<img src="../images/home/pompeii_icon.png" alt="pompeii_preview" id="pompeiip" />
+			<img src="../images/home/exc_icon.png" alt="exc_preview" id="excp" />
+			<img src="../images/home/sorrento_icon.png" alt="sorrento_preview" id="sorrentop" />
+			<img src="../images/home/positano_icon.png" alt="positano_preview" id="positanop" />
+			<img src="../images/home/florence_icon.png" alt="florence_preview" id="florencep" />
+			<img src="../images/home/vatican_icon.png" alt="vatican_preview" id="vaticanp" />
+			<img src="../images/home/kew_icon.png" alt="kewgardens_preview" id="kewp" />
+			<img src="../images/home/int_icon.png" alt="interiors_preview" id="intp" />
+			<img src="../images/home/thames_icon.png" alt="thames_preview" id="thamesp" />
+			<img src="../images/home/london_icon.png" alt="london_preview" id="londonp" />
+			<img src="../images/home/m_icon.png" alt="mendocino_preview" id="mendop" />
+			<img src="../images/home/g_icon.png" alt="greenhouse_preview" id="greenp" />
+			<img src="../images/home/w_icon.png" alt="warehouse_preview" id="warep" />
+			<img src="../images/home/l_icon.png" alt="lightleak_preview" id="lightp" />
+			<img src="../images/home/f_icon.png" alt="brothers_preview" id="famp" />
+		</div>
+	</section>
+	<script src="../js/collecthome.js"></script>
+	<script src="../js/filters.js"></script>
+</body>
+
 </html>

@@ -1,0 +1,83 @@
+/* "COLLECTIONS" HOME PAGE */
+
+#home-main {
+	height: 600px;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+}
+
+#home_preview {
+	width: 500px;
+	height: 500px;
+	border: 1px solid black;
+	border-radius: 50%;
+	position: relative;
+}
+
+#home_preview img {
+	width: 500px;
+	height: 500px;
+	position: absolute;
+	margin-left: auto;
+	margin-right: auto;
+	left: 0;
+	right: 0;
+	text-align: center;
+	opacity: 0;
+	transition: all 1s ease;
+}
+
+#collect-scroll {
+	display: flex;
+	flex-direction: column;
+	max-height: 95%;
+}
+
+#collection {
+	flex-direction: column;
+	align-items: flex-start;
+	font-size: 50px;
+	margin: 0;
+	justify-content: flex-start;
+	/* border: 1px solid red; */
+	overflow: auto;
+	transition: all 0.25s ease;
+}
+
+#collection li {
+	padding: 15px;
+}
+
+#collection li:first-child {
+	padding-top: 0px;
+}
+
+#collection li:last-child {
+	padding-bottom: 0;
+}
+
+.fa-angle-down,
+.fa-angle-up {
+	/* border: 1px solid red; */
+	display: block;
+	text-align: center;
+	font-size: 2em;
+	transition: all 0.25s ease;
+}
+
+/* .fa-angle-up {
+	opacity: 0;
+} */
+
+.fa-angle-down:hover {
+	transform: translateY(3px);
+	color: #f241c3;
+	cursor: pointer;
+}
+
+.fa-angle-up:hover {
+	transform: translateY(-3px);
+	color: #f241c3;
+	cursor: pointer;
+}
